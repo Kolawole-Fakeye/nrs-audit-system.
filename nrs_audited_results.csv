@@ -1,0 +1,21 @@
+Company_ID,Region,Sector,Declared_Revenue,Tax_Paid,Audit_Status
+C-101,Lagos,Banking,45000000,4500000,Verified
+C-102,Rivers,Oil,95000000,8200000,Verified
+C-103,Abuja,Telecom,62000000,5900000,Verified
+C-104,Kano,Manufacturing,28000000,1200000,PENDING
+C-105,Ogun,Agriculture,12000000,1100000,Verified
+C-106,Rivers,Oil,88000000,2500000,UNDER REVIEW
+C-107,Lagos,Banking,55000000,5400000,Verified
+C-108,Abuja,Telecom,71000000,3000000,UNDER REVIEW
+C-109,Lagos,Manufacturing,42000000,4100000,Verified
+C-110,Edo,Agriculture,15000000,1450000,Verified
+C-111,Oyo,Banking,38000000,3750000,Verified
+C-112,Delta,Oil,120000000,11500000,Verified
+C-113,Abuja,Telecom,85000000,8200000,Verified
+C-114,Kaduna,Manufacturing,33000000,1500000,PENDING
+C-115,Benue,Agriculture,9000000,850000,Verified
+C-116,Rivers,Oil,110000000,4000000,CRITICAL
+C-117,Lagos,Banking,92000000,9100000,Verified
+C-118,Kano,Manufacturing,50000000,4800000,Verified
+C-119,Anambra,Manufacturing,22000000,1100000,PENDING
+C-120,Lagos,Telecom,98000000,9500000,Verified
