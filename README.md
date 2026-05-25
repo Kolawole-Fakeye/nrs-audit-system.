@@ -1,4 +1,4 @@
-# nrs-audit-system.# Nigeria Revenue Service (NRS) Automated Audit Pipeline
+Nigeria Revenue Service (NRS) Automated Audit Pipeline
 
 An automated data auditing and compliance API engineered to programmatically ingest, normalize, and expose verified financial transaction logs. Built using **FastAPI** and **Pandas**, this system replaces manual spreadsheet workflows with an automated runtime engine designed to detect anomalies, reconcile data schemas, and stream audit-ready data.
 
