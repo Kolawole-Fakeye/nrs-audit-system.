@@ -44,3 +44,17 @@ pip install -r requirements.txt
 
 # Start the FastAPI development server
 uvicorn main:app --reload --port 8000
+
+🔒 Environment & Configuration
+For production deployment, configure your Streamlit Cloud provider environment variables or secrets with the following key:
+
+NRS_BACKEND_URL = "https://nrs-backend-api.onrender.com/data"
+
+📈 Core Capabilities Demonstrated
+Containerization: Production deployment utilizing optimized Docker configurations.
+
+Schema Drift Resilience: Ingestion algorithms capable of sanitizing and normalizing unstructured file schemas on the fly.
+
+Decoupled Architecture: Clean separation of concerns between raw analytical processing (API) and presentation layers (UI).
+
+Fault Tolerance: Robust exception mapping to guarantee uninterrupted dashboard operation even during network latency.
