@@ -1,45 +1,34 @@
-# Nigeria Revenue Service (NRS) Automated Audit Pipeline
+# NRS: Automated Data Audit API & Observability Pipeline
 
-An automated data auditing and compliance API engineered to programmatically ingest, normalize, and expose verified financial transaction logs. Built using **FastAPI** and **Pandas**, this system replaces manual spreadsheet workflows with an automated runtime engine designed to detect anomalies, reconcile data schemas, and stream audit-ready data.
-
----
-
-## 🚀 Key Architectural Features
-
-* **High-Performance REST Node:** Implements an active backend engine using FastAPI to securely stream compliance data to operational analytics dashboards.
-* **Self-Healing Schema Normalization:** Dynamically intercepts the data ingestion pipeline to correct formatting issues (e.g., spaces or inconsistent casing) on the fly, preventing downstream pipeline breakage.
-* **Programmatic Flagging Matrix:** Validates structured corporate filing ledgers against targeted compliance data criteria to isolate entries marked with an administrative audit flag (`Is_Anomaly`).
+> **A programmatic data auditing engine designed to replace manual spreadsheet workflows with automated fiscal compliance monitoring, schema standardization, and synthetic health logging.**
 
 ---
 
-## ⚙️ Core Architecture
+## 📊 Live Interactive Dashboard
+Recruiters and data professionals can interact with the live analytical frontend built for this pipeline:
 
-The pipeline acts as a bridge between structured local transactional storage and cloud data layers:
+👉 [**Launch the Live Streamlit Compliance Dashboard**](YOUR_STREAMLIT_COMMUNITY_CLOUD_URL_HERE)
 
-[ Financial Data Source ] ---> [ Pandas Normalization Engine ] ---> [ FastAPI REST Node ] ---> [ Downstream Dashboards / Consumers ]
-   (nrs_audited_results.csv)       (Self-Healing Column Transformer)     (JSON Serialization)          (Compliance Monitoring)
-
----
-
-## 🛠️ Tech Stack & Tooling
-
-* **Language:** Python 3.10+
-* **Backend Framework:** FastAPI (Asynchronous Web Framework)
-* **Data Processing:** Pandas (Data Transformation & Structural Ingestion)
-* **Development Environment:** GitHub Codespaces / DevContainers
+*(Note: If the app is sleeping, please click "Wake up app" to spin up the containerized instance.)*
 
 ---
 
-## 📋 API Endpoints Reference
+## 🛠️ Architecture & Core Features
 
-### 1. System Heartbeat
-Verifies that the microservice node is live and operating correctly.
+This project bridges **Systems Engineering** with **Modern Data Automation** by deploying an observable data pipeline that ingests, cleans, and monitors compliance logs:
 
-* **Endpoint:** `/`
-* **Method:** `GET`
-* **Response Payload:**
-```json
-{
-  "Status": "NRS API is Online",
-  "Engineer": "Kolawole"
-}
+* **Automated Data Normalization:** Implements defensive programming via `pandas` to dynamically clean, format, and normalize compliance schemas at runtime, catching structural drift (e.g., lowercase conversion or whitespace anomalies) automatically.
+* **Synthetic Monitoring & Observability:** Features a dedicated `/health` endpoint built alongside standard operational routes. This allows synthetic ping tools (like AWS Synthetic Canaries or custom Python cron scripts) to track API uptime metrics and verify system file dependencies proactively.
+* **Production-Grade Error Handling:** Replaces fragile scripts with explicit HTTP status reporting (404/500 blocks), ensuring data corruption or environment-level asset drops are logged without crashing the active server daemon.
+
+```text
+                  [ FISCAL LOG DATA SOURCE ]
+                              │
+                              ▼
+        [ FastAPI Backend Engine ] ──► [/health] ──► [ Synthetic Monitor ]
+                              │
+                              ▼
+       [ Pandas Anomaly Detection & Normalization ]
+                              │
+                              ▼
+    [ Streamlit Interactive UI / Recruiter View ]
